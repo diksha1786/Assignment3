@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Website Layout</title>
+</head>
+<body>
+<div>
+        <header class="fixed-header">
+                <h2 align="center">Kellton Tech Solution</h2>
+                    <div class="icenter">
+                       <img  src="kellton tech solution.jpg" alt="logo" width="100" height="100">               <!-- Image LOgo.-->
+                    </div>
+                    <div class=iright>
+                        <img  src="user1.jpg" alt="logo" width="100" height="100">
+                        <input  type="text" name="uname" placeholder="UserName"   autofocus>
+                    </div>
+         </header>
+</div>
+<div id="main">
+        <div style="background-color:coral;">
+                <form   action="thankyou.html">                                              <!--FORM STARTS-->
+    
+                    <div class="title">
+                       <label >Tittle:</label>
+                         <select class="talign" name="Tittle">               <!--Title-->
+                            <option value="Mr.">Mr.</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Miss">Miss</option>
+                          </select>
+                    </div> <br>
+            
+                    <div class="fname">                                     <!--FIRST NAME-->
+                      <label>First Name:</label>
+                      <input class="nalign" type="text" name="fname" placeholder="First Name" autofocus><br><br>
+                    </div>
+            
+                    <div class="fname">                                     <!-- Last Name-->
+                       <label>Last Name:</label>
+                       <input class="nalign" type="text" name="lname" placeholder="Last Name"><br><br>
+                    </div>
+            
+                    <div class="dob">                                       <!-- Date Of Birth-->
+                       <label for>DOB:</label>
+                       <input class="dalign"type="date" name="bday" ><br><br>
+                    </div>
+                
+                    <label class="labelalign">Full Address:</label>         <!-- Message Box-->
+                    <textarea class="tarea"name="message" rows="10" cols="30" ></textarea>
+                    </br> </br>
+                    <input class="ralign" type="checkbox" name="conditions" value="conditions">Agree with Terms and Conditions       <!-- CheckBox-->
+                    </br></br>
+               
+                    <input class="ralign icolor"type="submit" value="Register">            <!-- Submit Buttons-->
+                    <input class="salign"type="submit" value="Save Draft">
+                    
+                
+            </form>
+            
+
+            </div>
+         <div class="overflow" style="background-color:lightblue;" ><p><p></p>Kellton Tech Solutions Ltd. (KTSL) is an Indian information technology and outsourcing company headquartered in Hyderabad, India with offices in United States and Europe.The company reported net revenues of 7.39 billion with more than 1400 employees.
+            The US-based serial entrepreneurs Niranjan Chintam and Krishna Chintam took over city-based VMF Soft Tech Ltd. in 2009 and renamed it to Kellton Tech.[5] Kellton Tech has, since then, expanded their business portfolio following an organic and inorganic path by making acquisitions in the US and India.
+            The company provides Digital Transformation, Digital Connected Enterprise, SAP, Outsourced Product Development, and Digital Commerce and Marketing.Kellton Tech developed mSehat, a State Innovations in Family Planning Services Agency (SIFPSA) project to help health workers in five districts of Uttar Pradesh to record maternal-infant data in real time and provide them healthcare services. [8] mSehat was featured as a Case Study in a World Health Organization (WHO) report.[9] The report observed that mSehat is "currently the largest mHealth implementation in the world in terms of population served".
+            Continuing the quest for infinite possibilities with technology, Kellton Tech commits to empowering organizations with cutting-edge solutions. We offer holistic IT solutions, technical consulting, systems integration, and Enterprise solutions for over 200 clients worldwide, ranging from entry-level enterprises to Fortune 1000 companies. Many of the largest companies outsource their business needs to Kellton Tech, including leaders in retail, travel, e-commerce, education, hospitality, manufacturing, consumer goods, logistics, SCM, lifestyle, non-profits, and BFSI.
+
+
+
+            We, at Kellton Tech, understand that technology is never-settling. Our flagship product, KLGAMETM—Kellton Tech Location-based Gamification, Analytics, and rich Messaging Engine—encourages clients to seek disruptive opportunities and re-engineer the work culture to stay ahead of the curve. We study industry trends, continuously handle the changing market conditions, and employ a versatile approach to stay ahead of the competition.
+            
+            The company is listed on India’s largest stock exchange BSE and NSE [Code: KELLTONTEC; BOM: 519602] and is ISO 9001:2015 and CMMI Level 5 certified. We have offices in India (Gurgaon, Hyderabad, Lucknow), the US (Cupertino, CA; McLean, VA; New Brunswick, NJ, Chicago) and Europe (Ireland, United Kingdom). 
+            
+            Our Team
+            
+            Kellton Tech’s diverse workforce of more than 1400 employees takes a keen interest in disruptive technologies. They are the key to delivering excellent customer service and industry-leading growth. 
+            
+            Our employees’ diverse technical expertise and a proven track-record of delivering value to leading brands have helped us deliver transformative solutions. We collaborate with our clients to achieve a single mission—propel their business to the next level with our disruptive innovations.
+            
+            Partnerships
+            
+            Kellton Tech has formed an ecosystem of partners with market leaders and innovators. Together, we provide our clients innovative IT solutions that focus on enhancing the customer experience and decreasing operational costs—thereby freeing your time to focus on strategic initiatives</p></div>
+        </div>
+         
+        <div class="fixed-footer">  
+           <div class="container">Copyright &copy; 2019 Your Company</div>        
+        </div>
+
+</body>
+</html>
+
+<style>
+.icenter{
+        margin-top: -50px;
+        margin-left: 460px;
+}
+.fixed-footer,.fixed-header{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+      
+}
+.fixed-footer{
+        bottom: 0;
+        text-align: center;
+}
+.fixed-header{
+        top: 0;
+}
+.container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+}
+.iright{
+        float:right;
+        margin-top:-60px;
+        margin-right:100px
+}
+    
+ #main {
+        height: 400px;
+        margin-top:160px;
+        border: 1px solid #c3c3c3;
+  
+        display: flex;
+}
+
+#main div {
+  
+        flex:2;
+}
+
+#main div:nth-of-type(2) {
+        flex:1;
+}
+.overflow{
+        overflow:auto;
+}
+.fname{
+        margin-left:70px;
+}
+.dob{
+        margin-left:70px;
+}
+.title{
+        margin-left:70px
+}
+.choose{
+        margin-left:50px;
+}
+.talign{
+         margin-left:80px;
+}
+.labelalign{
+        vertical-align: top;
+        margin-left:70px;
+}
+.ralign{
+        margin-left:193px;
+}
+.dalign{
+        margin-left:80px;
+}
+ .salign{
+        margin-left: 60px;
+}
+.tarea{
+        margin-left:30px;
+}
+.nalign{
+        margin-left:45px;
+}
+.iarea{
+        margin-left:18px;
+}
+.icolor{
+        background-color: aqua;
+ }
+
+ body {
+        background-color: lightgreen;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+</style>
